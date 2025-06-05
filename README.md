@@ -32,6 +32,8 @@ The raw microarray data used in this study (Affymetrix `.CEL` files) are publicl
 
 To reproduce the analysis, download all CEL files from the GEO repository and place them in the `data/` folder.
 
+Also, download the annotation file from https://www.thermofisher.com/order/catalog/product/902927.
+
 ## Requirements
 
 - R version: 4.4.2
