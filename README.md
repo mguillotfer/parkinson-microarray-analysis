@@ -21,11 +21,12 @@ The analysis is primarily based on R scripts, using raw microarray data files (`
 
 ## Repository structure
 
-├── scripts/ # R scripts for preprocessing, analysis, and plotting
-├── data/ # Input data (user must download separately)
-├── results/ # Output tables and intermediate files
-├── figures/ # Plots used in the paper
-└── README.md # This file
+- scripts/ # R scripts for preprocessing, analysis, and plotting
+- data/ # Input data (user must download separately)
+- results/ # Output tables and intermediate files
+- figures/ # Plots used in the paper
+- README.md # This file
+  
 ## Data
 
 The raw microarray data used in this study (Affymetrix `.CEL` files) are publicly available from the Gene Expression Omnibus (GEO) under accession number **[GSE290333](https://urldefense.com/v3/__https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE290333__;!!D9dNQwwGXtA!Qd4zkJ-MDO8yfX6hW5pvcIqYDnfychXFnNHriNUe4EQb_R57rfAWJ1VGDUAnICAVyobeKQy8mGcX4WwzXQ$)**.
