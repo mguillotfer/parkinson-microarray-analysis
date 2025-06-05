@@ -12,11 +12,8 @@ The goal of this analysis is to:
 - Identify differentially expressed genes (DEGs) between PD patients and controls
 - Perform gene set enrichment analysis (GSEA)
 - Infer cell-type proportions using CIBERSORTx
-- Compare results with prior studies
 
-
-The analysis is primarily based on R scripts, using raw microarray data files (`.CEL`) available from the Gene Expression Omnibus (GEO).
-
+The pipeline is implemented in R using raw .CEL files from Affymetrix Clariom™ S Human arrays, publicly available on GEO.
 
 ## Repository structure
 
@@ -32,7 +29,7 @@ The raw microarray data used in this study (Affymetrix `.CEL` files) are publicl
 
 To reproduce the analysis, download all CEL files from the GEO repository and place them in the `data/` folder.
 
-Also, download the annotation file from https://www.thermofisher.com/order/catalog/product/902927.
+In addition, gene-level annotation is performed using the Clariom™ S Human Array annotation file. This must be downloaded separately from Thermo Fisher Scientific: https://www.thermofisher.com/order/catalog/product/902927 (Current NetAffx Annotation Files: Clariom™ S Array, human Transcript Cluster Annotations, CSV, Release 36). 
 
 ## Requirements
 
@@ -43,5 +40,35 @@ Also, download the annotation file from https://www.thermofisher.com/order/catal
 
 The analysis was performed using the following R packages (with versions):
 
-enrichplot_1.26.6, org.Hs.eg.db_3.20.0, AnnotationDbi_1.68.0, clusterProfiler_4.14.6, scales_1.4.0, gplots_3.2.0, lubridate_1.9.4, forcats_1.0.0, stringr_1.5.1, dplyr_1.1.4, purrr_1.0.4, readr_2.1.5, tidyr_1.3.1, tibble_3.2.1, tidyverse_2.0.0, RColorBrewer_1.1-3, limma_3.62.2, ggplot2_3.5.2, affy_1.84.0, pd.clariom.s.human_3.14.1, DBI_1.2.3, RSQLite_2.3.11, oligo_1.70.1, Biostrings_2.74.1, GenomeInfoDb_1.42.3, XVector_0.46.0, IRanges_2.40.1, S4Vectors_0.44.0, oligoClasses_1.68.0, Biobase_2.66.0, BiocGenerics_0.52.0
+affy_1.84.0
+AnnotationDbi_1.68.0
+Biobase_2.66.0
+BiocGenerics_0.52.0
+Biostrings_2.74.1
+clusterProfiler_4.14.6
+DBI_1.2.3
+dplyr_1.1.4
+enrichplot_1.26.6
+forcats_1.0.0
+ggplot2_3.5.2
+gplots_3.2.0
+IRanges_2.40.1
+limma_3.62.2
+lubridate_1.9.4
+oligo_1.70.1
+oligoClasses_1.68.0
+org.Hs.eg.db_3.20.0
+pd.clariom.s.human_3.14.1
+purrr_1.0.4
+RColorBrewer_1.1-3
+readr_2.1.5
+RSQLite_2.3.11
+scales_1.4.0
+S4Vectors_0.44.0
+stringr_1.5.1
+tibble_3.2.1
+tidyr_1.3.1
+tidyverse_2.0.0
+XVector_0.46.0
+GenomeInfoDb_1.42.3
 
