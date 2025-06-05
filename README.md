@@ -1,6 +1,6 @@
 # Analysis for the paper: Whole transcriptome analysis of peripheral blood mononuclear cells from de novo and drug-naïve sporadic Parkinson’s disease patients
 
-This repository contains the code, figures, and results used in the analysis described in the manuscript:  
+This repository contains the code used in the analysis described in the manuscript:  
 **Whole transcriptome analysis of peripheral blood mononuclear cells from de novo and drug-naïve sporadic Parkinson’s disease patients**  
 Francisco Navarrete1,2,3*, Marina Guillot-Fernández1*, Lorena Martínez-Hostyn1,2,3, Daniela Navarro1,2,3, José A. Molina4, Jose P. López-Atalaya1, and Jorge Manzanares1,2,3
 
@@ -13,7 +13,6 @@ The goal of this analysis is to:
 - Perform gene set enrichment analysis (GSEA)
 - Infer cell-type proportions using CIBERSORTx
 - Compare results with prior studies
-- Generate reproducible figures for publication
 
 
 The analysis is primarily based on R scripts, using raw microarray data files (`.CEL`) available from the Gene Expression Omnibus (GEO).
